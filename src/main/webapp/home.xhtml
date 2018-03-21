@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.xhtml">App SSO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.xhtml">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/details.xhtml">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.xhtml">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <center>
+
+          
+            <h1 style="color: #ccc">Bienvenido</h1>
+            <img src="img/wso2.jpg" alt=""/>
+            <h4><strong>Usuario:</strong><i>#{indexController.nameUser}</i></h4>
+            <br></br>
+
+            <br />
+            <a class="btn btn-info" href="logout?SAML2.HTTPBinding=HTTP-Redirect">Logout (HTTPRedirect)
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-success" href="logout?SAML2.HTTPBinding=HTTP-POST">Logout (HTTP Post)</a><br/>
+
+        </center>
+    </h:body>
+</html>
+
