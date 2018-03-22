@@ -19,7 +19,7 @@ OpenId.ReturnToURL=http://35.196.102.126:8080/ejemploWso2-1/home.xhtml
 ## estas configuraciones se realizaron para el WSO2 Identity Server 5.5.0 - RC2
 servidor: https://ayungan.me:9443
 app cliente :http://35.196.102.126:8080/ejemploWso2-1/home.xhtml
-## solo si ejecuta localmente  opcional
+## (opcional) solo si ejecuta localmente
 #### es necesario crear un dominio para la aplicacion del cliente para q  funcione correctamente las cookies en: 
 si ejecuta localmente puede realizarlo de la siguiente manera
 **linux** sudo nano /etc/hosts 
