@@ -1,4 +1,4 @@
-# wso2JSF
+# App Java web maven para Tomcat
 ejemplo de cliente wso2  en jsf MAVEN
 # configuracion
 proyecto_name/src/main/resources/travelocity.properties
